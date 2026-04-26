@@ -22,25 +22,25 @@ export function Testimonial() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-32 lg:py-40 px-6 lg:px-12 bg-sage">
+    <section ref={sectionRef} className="py-32 lg:py-40 px-6 lg:px-12 bg-card">
       <div className="max-w-5xl mx-auto text-center">
         {/* Quote Mark */}
         <div
           className={`mb-10 transition-all duration-1000 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
         >
-          <svg className="w-16 h-16 mx-auto text-primary-foreground/30" fill="currentColor" viewBox="0 0 24 24">
+          <svg className="w-16 h-16 mx-auto text-terracotta/40" fill="currentColor" viewBox="0 0 24 24">
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
           </svg>
         </div>
 
         {/* Quote */}
         <blockquote
-          className={`font-serif text-2xl md:text-3xl lg:text-4xl font-light text-primary-foreground leading-relaxed mb-10 text-balance transition-all duration-1000 delay-200 ${
+          className={`font-serif text-2xl md:text-3xl lg:text-4xl font-light text-foreground leading-relaxed mb-10 text-balance transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          Работа с Wabi была похожа на медитацию. Они поняли, что наш дом должен поддерживать
-          благополучие семьи, а не просто красиво выглядеть. Результат — пространство, которое наконец ощущается как наше.
+          Я слушал «Морг» три раза подряд в наушниках в три ночи. Первый раз — чтобы понять.
+          Второй — чтобы почувствовать. Третий — потому что не мог остановиться.
         </blockquote>
 
         {/* Attribution */}
@@ -49,8 +49,8 @@ export function Testimonial() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="text-sm tracking-widest uppercase text-primary-foreground/80">Анна и Михаил Петровы</p>
-          <p className="text-sm text-primary-foreground/60 mt-1">Резиденция в Москве</p>
+          <p className="text-sm tracking-widest uppercase text-foreground/70">— слушатель</p>
+          <p className="text-sm text-muted-foreground mt-1">из комментариев к релизу</p>
         </div>
       </div>
     </section>
