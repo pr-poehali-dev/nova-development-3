@@ -19,7 +19,7 @@ export function Hero() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Новый альбом · 2024
+          Новый альбом · 2026
         </p>
 
         {/* Main Headline */}
